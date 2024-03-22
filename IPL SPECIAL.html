@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+   
+<link rel="stylesheet" href="https://csssportsnd.pages.dev/style-six.css" id="theme">
+
+<link rel="stylesheet" href="https://csssportsnd.pages.dev/responsive.css">
+
+<!-- Splide Slider CSS -->
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap" rel="stylesheet">
+
+ 
+ 
+  
+  
+ <style type="text/css">
+      .search .search-input input[type=text]::placeholder, .search .search-input input[type=text].focus {
+          background: #000000 !important; 
+      }
+
+header{
+	margin-top:48px;
+}
+.vfx_preview_header {
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	position: absolute;
+}
+.header_top {
+	display: inline-block;
+	padding: 11px 5px;
+	position: relative;
+	min-height: 50px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #ffffff;
+	width: 100%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.preview_envato_logo {
+	float: left;
+	padding: 0;
+}
+.preview_envato_logo a {
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	text-indent: -9999px;
+	height: 18px;
+	width: 152px;
+	background: url(https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg);
+	background-size: auto;
+	background-size: 152px 18px;
+}
+.vfx_preview_header + header:before {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	content: "";
+	height: 60px;
+	position: absolute;
+	background-size: 200% 200%;
+	-webkit-animation: gradientChange 5s ease infinite;
+			animation: gradientChange 5s ease infinite;
+	background-image: -webkit-gradient(linear, right top, left top, from(#3d9bfc), color-stop(#7b40e4), color-stop(#f53a8b), color-stop(#ee704a), to(#ddd24c));
+	background-image: linear-gradient(270deg, #3d9bfc, #7b40e4, #f53a8b, #ee704a, #ddd24c);
+}
+.vfx_preview_contant {
+	padding: 0 10px;
+	display: block;
+	margin: 0 auto;
+	width: max-content;
+}
+.vfx_preview_contant p{
+	margin-bottom:0;
+	color:#ffffff;
+}
+.vfx_preview_buy_now{
+	padding: 0 5px 0 10px;
+	display: block;
+	right: 0;
+	top:13px;
+	position: absolute;
+}
+.buy-now-btn{
+	background: #ffffff;
+	border-radius: 4px;
+	color: #fd0575;
+	font-size: 14px;
+	font-weight:700;
+	padding: 6px 20px;
+	line-height: 1.5;
+	text-transform:uppercase;
+	box-shadow:0 1px 8px rgba(0, 0, 0, 0.15);
+}
+.buy-now-btn:hover{
+	background:#b71850;
+	color:#ffffff;
+}
+
+@media only screen and (max-width:639px) {
+.vfx_preview_contant{
+	display:none;
+}
+}
+
+/*****************************************************************
+	CSS Animation - Start
+*****************************************************************/
+.layer {
+  position: relative !important;
+}
+
+@-webkit-keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes radiusAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+@keyframes radiusAnimation {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.radius_animation {
+  -webkit-animation: radiusAnimation 8s ease-in-out infinite;
+          animation: radiusAnimation 8s ease-in-out infinite;
+}
+/*****************************************************************
+	CSS Animation - End
+*****************************************************************/     
+ </style>
+
+</head>
+<body>
+  
+
+
+
+    
+  <!-- Start Slider Area -->
+<div class="slider-area pt-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+                
+        
+         
+        
+        <li class="splide__slide">
+          <a href="https://momixtv.github.io/Star1Hindi">
+            <div class="splide-slider-details-area">
+              <h1>Star Sports Hindi HD</h1>
+              <a href="https://momixtv.github.io/Star1Hindi" class="btn-watch"><img src="https://i.ibb.co/VxMLQrK/image.png" alt="ic-play" title="ic-play">Watch</a>
+            
+            </div>
+            <img src="https://sportsmintmedia.com/wp-content/uploads/2022/05/Star-Sports-1-Hindi-ranks-highest-in-M15-ABU-category-owing-to-IPL-2022.jpg">
+          </a>
+        </li>
+                
+        
+         
+        
+        <li class="splide__slide">
+          <a href="https://momixtv.github.io/Star1HD">
+            <div class="splide-slider-details-area">
+              <h1>Star Sports English HD</h1>
+              <a href="https://momixtv.github.io/Star1HD" class="btn-watch"><img src="https://i.ibb.co/VxMLQrK/image.png" alt="ic-play" title="ic-play">Watch</a>
+             
+            </div>
+            <img src="https://www.medianews4u.com/wp-content/uploads/2023/04/Star-Sports-claims-140-mn-viewers-on-the-IPL-2023-opening-day-match.jpg">
+          </a>
+        </li>
+
+
+        <li class="splide__slide">
+          <a href="#">
+            <div class="splide-slider-details-area">
+              <h1>JioCinema UHD</h1>
+              <a href="?" class="btn-watch"><img src="https://i.ibb.co/VxMLQrK/image.png" alt="ic-play" title="ic-play">Watch</a>
+             
+            </div>
+            <img src="https://www.broadcastandcablesat.co.in/wp-content/uploads/2024/03/JioCinema-Unveils-Stellar-additions-in-their-galaxy-of-superstars-for-the-2024-TATA-IPL.jpg">
+          </a>
+        </li>
+
+        
+        <li class="splide__slide">
+          <a href="https://momixtv.github.io/AstroCric">
+            <div class="splide-slider-details-area">
+              <h1>Astro Cricket HD</h1>
+              <a href="https://momixtv.github.io/AstroCric" class="btn-watch"><img src="https://i.ibb.co/VxMLQrK/image.png" alt="ic-play" title="ic-play">Watch</a>
+             
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png">
+          </a>
+        </li>
+
+                
+        
+                
+        
+      
+                 
+        
+      </ul>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- End Slider Area -->   
+
+<!-- Banner -->
+      
+
+
+<link rel="stylesheet" href="https://csssportsnd.pages.dev/nice-select.css">
+
+<!-- Start View All Sports -->
+<div class="view-all-video-area vfx-item-ptb">
+  <div class="container-fluid">
+  
+    
+    <div class="row">
+     
+         
+             
+        
+             
+       
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-6">
+                  <div class="single-video">
+        
+                    <a href="https://momixtv.github.io/Star1Hindi">
+                       <div class="video-img">          
+                        <img src="https://i0.wp.com/blog.themediaant.com/wp-content/uploads/2022/02/star-sports-1-hindi.png?resize=436%2C245&ssl=1">         
+                       </div>
+                       <div class="season-title-item">
+                        <h3 class="mb-0">Star Sports Hindi HD</h3>
+                       </div> 
+                    </a>
+                  </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-6">
+                      <div class="single-video">
+            
+                        <a href="https://momixtv.github.io/Star1HD">
+                           <div class="video-img">          
+                            <img src="https://www.tataplay.com/s3-api/v1/assets/channels/star-sports-1-hd.gif">         
+                           </div>
+                           <div class="season-title-item">
+                            <h3 class="mb-0">Star Sports 1 HD</h3>
+                           </div> 
+                        </a>
+                      </div>
+                         </div>
+
+                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-6">
+                          <div class="single-video">
+                
+                            <a href="https://momixtv.github.io/Star2HD">
+                               <div class="video-img">          
+                                <img src="https://www.tataplay.com/s3-api/v1/assets/channels/star-sports-2-hd.gif">         
+                               </div>
+                               <div class="season-title-item">
+                                <h3 class="mb-0">Star Sports 2 HD</h3>
+                               </div> 
+                            </a>
+                          </div>
+                             </div>
+
+                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-6">
+                          <div class="single-video">
+                
+                            <a href="https://momixtv.github.io/SkyCric">
+                               <div class="video-img">          
+                                <img src="https://i.postimg.cc/5tycsSBP/skysportscricket-ezgif-com-crop-2.png">         
+                               </div>
+                               <div class="season-title-item">
+                                <h3 class="mb-0">Sky Sport's Circket</h3>
+                               </div> 
+                            </a>
+                          </div>
+                             </div>
+
+                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-6">
+                              <div class="single-video">
+                    
+                                <a href="https://momixtv.github.io/WillowHD">
+                                   <div class="video-img">          
+                                    <img src="https://i.postimg.cc/d1nyJvkQ/8297c2bdee06363d19f3f7d95ac774ae-fgraphic-ezgif-com-crop-1.jpg">         
+                                   </div>
+                                   <div class="season-title-item">
+                                    <h3 class="mb-0">Willow HD</h3>
+                                   </div> 
+                                </a>
+                              </div>
+                                 </div>
+
+      </div> 
+
+
+
+ 
+ 
+  
+  <!-- Load Local JS --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>  
+
+ 
+<!-- Splide Slider JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<!-- Custom Main JS -->
+<script src="https://csssportsnd.pages.dev/custom-main.js"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  $("li[data-path]").click(function() {
+ 
+    $("head link#theme").attr("href", $(this).data("path"));
+});
+
+</script>
+
+
+  
+
+ 
+
+
+   
+
+
+ 
+
+</body>
+</html>
+
+    
